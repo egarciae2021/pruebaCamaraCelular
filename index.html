@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomar Foto</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #preview {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tomar Foto</h1>
+    <button id="openCameraButton">Abrir Cámara</button>
+    <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none;">
+    <img id="preview" alt="Vista previa de la imagen" style="display:none;">
+
+    <script src="script.js"></script>
+</body>
+</html>
