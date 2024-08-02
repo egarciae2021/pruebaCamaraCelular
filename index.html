@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomar Foto</title>
+    <title>Tomar Foto y Ubicación</title>
     <style>
         body {
             display: flex;
@@ -19,13 +19,17 @@
             max-width: 100%;
             height: auto;
         }
+        #location {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Tomar Foto</h1>
+    <h1>Tomar Foto y Ubicación</h1>
     <button id="openCameraButton">Abrir Cámara</button>
     <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none;">
     <img id="preview" alt="Vista previa de la imagen" style="display:none;">
+    <div id="location"></div>
 
     <script src="script.js"></script>
 </body>
