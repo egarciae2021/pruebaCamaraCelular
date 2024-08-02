@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const preview = document.getElementById('preview');
     const locationDiv = document.getElementById('location');
 
-    openCameraButton.addEventListener('click', () => {
+    openCameraButton.addEventListener('click',  () => {
         cameraInput.click();
     });
 
