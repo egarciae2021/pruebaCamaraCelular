@@ -13,6 +13,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         #preview {
             margin-top: 20px;
@@ -21,6 +22,11 @@
         }
         #location {
             margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: inline-block;
         }
     </style>
 </head>
@@ -29,7 +35,7 @@
     <button id="openCameraButton">Abrir Cámara</button>
     <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display:none;">
     <img id="preview" alt="Vista previa de la imagen" style="display:none;">
-    <div id="location"></div>
+    <div id="location">Obteniendo ubicación...</div>
 
     <script src="script.js"></script>
 </body>
